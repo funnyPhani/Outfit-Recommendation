@@ -119,7 +119,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ![Sample Output](https://github.com/funnyPhani/Outfit-Recommendation/blob/main/Screenshot%202024-11-27%20123739.png)
 ![Sample Output](https://github.com/funnyPhani/Outfit-Recommendation/blob/main/Screenshot%202024-11-27%20123647.png)
 
-
+https://github.com/funnyPhani/Outfit-Recommendation/blob/main/Screenshot%202024-11-27%20125247.png
 
 
 
@@ -197,6 +197,11 @@ This project aims to recommend outfits based on facial characteristics, leveragi
 2. If no matching outfit is found in the Fashion MNIST dataset for the recommended style, an appropriate message is displayed.
 
 ---
+
+### Model Training
+
+![Sample Output](https://github.com/funnyPhani/Outfit-Recommendation/blob/main/Screenshot%202024-11-27%20125247.png)
+
 
 
 
