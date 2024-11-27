@@ -2,6 +2,13 @@ import numpy as np
 import random
 
 def categorize_face(face_image):
+    """
+    Categorizes a face image as casual or formal based on its color distribution.
+    Args:
+        face_image (np.array): Input face image.
+    Returns:
+        int: 0 for casual, 1 for formal.
+    """
     avg_color = np.mean(face_image, axis=(0, 1))
     return 0 if avg_color[1] > avg_color[0] else 1
 
