@@ -118,9 +118,10 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Sample output
 ![Sample Output](https://github.com/funnyPhani/Outfit-Recommendation/blob/main/Screenshot%202024-11-27%20123739.png)
 ![Sample Output](https://github.com/funnyPhani/Outfit-Recommendation/blob/main/Screenshot%202024-11-27%20123647.png)
+![Input Face Image](https://github.com/funnyPhani/Outfit-Recommendation/blob/main/Screenshot%202024-11-27%20125850.png)
+![Recommended Outfit](https://github.com/funnyPhani/Outfit-Recommendation/blob/main/Screenshot%202024-11-27%20125935.png)
 
-https://github.com/funnyPhani/Outfit-Recommendation/blob/main/Screenshot%202024-11-27%20125247.png
-
+---
 
 
 Here’s a detailed documentation on how the **Face-Based Outfit Recommendation System** pipeline works:
