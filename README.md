@@ -117,7 +117,6 @@ pip install -r requirements.txt
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 ## Sample output
 ![Sample Output](https://github.com/funnyPhani/Outfit-Recommendation/blob/main/Screenshot%202024-11-27%20123739.png)
-![Sample Output](https://github.com/funnyPhani/Outfit-Recommendation/blob/main/Screenshot%202024-11-27%20123647.png)
 ![Input Face Image](https://github.com/funnyPhani/Outfit-Recommendation/blob/main/Screenshot%202024-11-27%20125850.png)
 ![Recommended Outfit](https://github.com/funnyPhani/Outfit-Recommendation/blob/main/Screenshot%202024-11-27%20125935.png)
 
