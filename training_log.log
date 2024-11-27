@@ -1,0 +1,13 @@
+2024-11-27 12:31:08,975 - WARNING - Mixed precision compatibility check (mixed_float16): WARNING
+The dtype policy mixed_float16 may run slowly because this machine does not have a GPU. Only Nvidia GPUs with compute capability of at least 7.0 run quickly with mixed_float16.
+If you will use compatible GPU(s) not attached to this host, e.g. by running a multi-worker model, you can ignore this warning. This message will only be logged once
+2024-11-27 12:31:10,901 - WARNING - From C:\Users\A507658\AppData\Local\anaconda3\Lib\site-packages\keras\src\backend.py:1398: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-11-27 12:31:11,062 - WARNING - From C:\Users\A507658\AppData\Local\anaconda3\Lib\site-packages\keras\src\layers\pooling\max_pooling2d.py:161: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+2024-11-27 12:31:12,112 - WARNING - From C:\Users\A507658\AppData\Local\anaconda3\Lib\site-packages\keras\src\utils\tf_utils.py:492: The name tf.ragged.RaggedTensorValue is deprecated. Please use tf.compat.v1.ragged.RaggedTensorValue instead.
+
+2024-11-27 12:31:12,690 - WARNING - From C:\Users\A507658\AppData\Local\anaconda3\Lib\site-packages\keras\src\engine\base_layer_utils.py:384: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2024-11-27 12:56:31,580 - INFO - Final model saved as final_model.h5
+2024-11-27 12:57:05,590 - INFO - Validation Loss: 0.246562671661377, Validation Accuracy: 0.8916665971279144
