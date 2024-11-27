@@ -122,3 +122,81 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 
 
+
+Here’s a detailed documentation on how the **Face-Based Outfit Recommendation System** pipeline works:
+
+---
+
+## **Face-Based Outfit Recommendation System**
+This project aims to recommend outfits based on facial characteristics, leveraging deep learning and transfer learning techniques.
+
+### **Pipeline Overview**
+1. **Data Preprocessing**
+2. **Model Training**
+3. **Inference and Recommendation**
+4. **Visualization**
+
+---
+
+### **1. Data Preprocessing**
+
+#### **a. CelebA Dataset Preprocessing**
+- **Input:** CelebA dataset containing facial images.
+- **Steps:**
+  1. Images are resized to a standard size (128x128) for uniformity using OpenCV.
+  2. Normalized to the range [0, 1].
+  3. Labels are generated based on a simple rule (categorizing images as *Casual* or *Formal* based on average color intensity).
+  
+#### **b. Fashion MNIST Dataset Preprocessing**
+- **Input:** Fashion MNIST dataset with grayscale clothing images.
+- **Steps:**
+  1. Images are resized to 128x128 and converted to RGB format by duplicating channels.
+  2. A subset of images is selected (6 categories relevant to the recommendation system).
+  3. Images are normalized to [0, 1].
+
+---
+
+### **2. Model Training**
+
+#### **Transfer Learning with VGG16**
+- **Architecture:**
+  - **Base Model:** Pre-trained VGG16 (ImageNet weights) is used as the feature extractor.
+  - **Head Layers:**
+    - Global Average Pooling.
+    - Dense layers with dropout for regularization.
+    - Output layer with a sigmoid activation for binary classification (Casual or Formal).
+- **Training:**
+  - **Training Data:** CelebA data generator is used to feed preprocessed batches.
+  - **Validation Data:** Fashion MNIST subset (simulates clothing categories for testing).
+  - **Callbacks:** 
+    - Early stopping.
+    - Learning rate reduction on plateau.
+    - Model checkpointing.
+- **Mixed Precision Training:** Enabled to reduce memory usage and improve training efficiency.
+
+---
+
+### **3. Inference and Recommendation**
+
+#### **Steps:**
+1. **Face Image Preprocessing:**
+   - Input face image is resized, normalized, and passed to the trained model.
+2. **Category Prediction:**
+   - The model predicts whether the face corresponds to *Casual* or *Formal*.
+3. **Outfit Recommendation:**
+   - Based on the predicted category, an outfit is randomly chosen from predefined clothing styles:
+     - **Casual:** T-shirt, Pullover, Jeans, Hoodie, etc.
+     - **Formal:** Dress, Blazer, Suit, Tie, etc.
+
+---
+
+### **4. Visualization**
+
+#### **Steps:**
+1. The input face image and the recommended outfit image are displayed side by side using Matplotlib.
+2. If no matching outfit is found in the Fashion MNIST dataset for the recommended style, an appropriate message is displayed.
+
+---
+
+
+
